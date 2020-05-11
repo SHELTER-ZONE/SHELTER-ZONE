@@ -1,16 +1,26 @@
 <template>
     <div id="nav" data-aos="fade-down" data-aos-duration="1000">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/docs">Docs</router-link> |
-        <router-link to="/join">Join</router-link>
+        <router-link to="/" @click.native="repage(true)">Home</router-link> |
+        <router-link to="/about" @click.native="repage(false)">About</router-link> |
+        <router-link to="/docs" @click.native="repage(false)">Docs</router-link> |
+        <router-link to="/join" @click.native="repage(false)">Join</router-link>
     </div>
 </template>
 
 <script>
+    import AOS from 'aos'
     export default {
         name: "NavBar",
+        methods:{
+            repage(value){
+                this.$store.commit('page', value)
+                setTimeout(() => {
+                    AOS.refresh()
+                }, 1100);
+            }
+        }
     }
+    
 </script>
 
 <style lang="scss" scoped>

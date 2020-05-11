@@ -4,12 +4,16 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
+    state: {
+        ishome: true
   },
-  mutations: {
+    mutations: {
+        page(state, bool) {
+            state.ishome = bool
+        }
   },
-  actions: {
+    actions: {
   },
-  modules: {
+    modules: {
   }
 })

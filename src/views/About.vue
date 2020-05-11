@@ -1,6 +1,7 @@
 <template>
+    
     <div id="about">
-
+        
         <div id="about-sz">
             <p class="article-title" data-aos="fade-up">About</p>
             <p style="font-size:1.5rem;" data-aos="fade-up">SHELTER ZONE</p>
@@ -25,7 +26,7 @@
                 <div class="article-title" data-aos="fade-left">名稱的由來</div>
                 <span>
                     SHELTER = 僻護所<br>
-                    SHELTER = ZONE<br>
+                    ZONE<br>
                 </span>
             </div>
 

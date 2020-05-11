@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <Header />
-        <transition name="fade">
-            <router-view id="router-view" />
+        <transition name="fade" >
+            <router-view id="router-view" v-if="$store.state.ishome==false"/>
         </transition>
         <GoTop />
         <Footer id="footer"/>
@@ -18,7 +18,7 @@
             Header,
             GoTop,
             Footer,
-        }
+        },
     }
 </script>
 
