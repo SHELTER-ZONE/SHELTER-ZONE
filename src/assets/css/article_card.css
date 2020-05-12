@@ -1,10 +1,27 @@
 .article-card-wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    line-height: 40px;
 }
 
+.article-wrapper{
+    margin: 0 auto;
+    margin-bottom: 150px;
+    width: 90%;
+    line-height: 40px;
+}
+
+.article{
+    margin: 0 auto;
+}
+.article-title {
+    font-size: 2rem;
+    line-height: 60px;
+}
 .article-card {
-    width: 10em;
+    width: 15em;
     font-size: 20pt;
     margin: 0 auto;
     margin-top: 20px;
@@ -17,11 +34,16 @@
 .card-date {
     font-size: 1rem;
     text-align: center;
+    margin: 10px;
 }
 
 .card-content {
     font-size: 1rem;
     width: 100%;
     text-align: justify;
+}
+
+.title1 {
+    margin-bottom: 50px;
 }
 

@@ -1,16 +1,16 @@
 <template>
     <div class="docs">
-        <ul>
-            <li>
-                <a href="https://shelter-zone.github.io/Ask-Questions-Guide-Doc/">Ask Questions Guide</a>
-            </li>
-        </ul>
+        <DocsCard />
     </div>
 </template>
 
 <script>
+    import DocsCard from '@/components/DocsCard.vue'
     export default {
         name: "Docs",
+        components:{
+            DocsCard,
+        }
     }
 </script>
 

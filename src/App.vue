@@ -42,7 +42,8 @@
 
     @media screen and (max-width: 300px){
         #app{
-            width: 100%;
+            width: 100vw;
+            height: 100vh;
         }
     }
 
