@@ -1,13 +1,17 @@
 <template>
     <div id="header" class="header" :class="{home: home}">
         <NavBar />
-        <h1 id="server-name" :class="{header_title: !home, server_name: home}" data-aos="fade-up"
-            data-aos-duration="2000" data-aos-delay="500">
-            SHELTER ZONE
-        </h1>
-        <h3 id="sub-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">2018 / 6 / 27 Proladon#7525
-        </h3>
-        <button id="enter" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="2000"  @click="entry" :class="{hide: !home}">Entry</button>
+        <div class="header_wrapper">
+            <h1 id="server-name" :class="{header_title: !home, server_name: home}" data-aos="fade-up"
+                data-aos-duration="2000" data-aos-delay="500">
+                SHELTER ZONE
+            </h1>
+            <h3 id="sub-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">2018 / 6 / 27
+                Proladon#7525
+            </h3>
+            <button id="enter" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="2000" @click="entry"
+                :class="{hide: !home}">Entry</button>
+        </div>
     </div>
 </template>
 
@@ -72,8 +76,16 @@
         height: 90vh;
     }
 
+    .header_wrapper {
+        margin: 0 auto;
+        height: 100%;
+    }
+
     .server_name {
-        margin-top: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -150px 0 0 -500px;
         font-size: 8rem;
         transition: 2s;
         animation: tohome 1s;
@@ -109,33 +121,61 @@
         transition: 1.5s;
     }
 
-    .hide{
+    .hide {
         color: transparent !important;
     }
 
     @keyframes pagechange {
-        from {font-size: 8rem;}
+        from {
+            font-size: 8rem;
+        }
 
-        to {font-size: 5rem;}
+        to {
+            font-size: 5rem;
+        }
 
-        from {margin-top: 300px;}
+        from {
+            margin-top: 300px;
+        }
 
-        to {margin-top: 80px;}
+        to {
+            margin-top: 80px;
+        }
     }
 
     @keyframes tohome {
-        from {font-size: 5rem;}
+        from {
+            font-size: 5rem;
+        }
 
-        to {font-size: 8rem;}
+        to {
+            font-size: 8rem;
+        }
 
-        from {margin-top: 80px;}
+        from {
+            margin-top: 80px;
+        }
 
-        to {margin-top: 300px;}
+        to {
+            margin-top: 300px;
+        }
     }
 
-    @media screen and (max-width: 375px) {
+    /* Mobile */
+    @media screen and (max-width: 430px) {
+        .header_wrapper {
+            margin: 0 auto;
+            height: 100%;
+            vertical-align: middle;
+            justify-content: center;
+            padding: 0;
+        }
+
         .server_name {
-            margin-top: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -80px 0 0 -187.5px;
             font-size: 5rem;
             transition: 2s;
             animation: tohome 1s;
@@ -155,23 +195,39 @@
         }
 
         @keyframes pagechange {
-            from {font-size: 5rem;}
+            from {
+                font-size: 5rem;
+            }
 
-            to {font-size: 2.5rem;}
+            to {
+                font-size: 2.5rem;
+            }
 
-            from {margin-top: 200px;}
+            from {
+                margin-top: 200px;
+            }
 
-            to {margin-top: 80px;}
+            to {
+                margin-top: 80px;
+            }
         }
 
         @keyframes tohome {
-            from {font-size: 2.5rem;}
+            from {
+                font-size: 2.5rem;
+            }
 
-            to {font-size: 5rem;}
+            to {
+                font-size: 5rem;
+            }
 
-            from {margin-top: 80px;}
+            from {
+                margin-top: 80px;
+            }
 
-            to {margin-top: 200px;}
+            to {
+                margin-top: 200px;
+            }
         }
     }
 </style>

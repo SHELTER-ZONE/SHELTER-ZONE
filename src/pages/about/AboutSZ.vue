@@ -90,12 +90,13 @@
         width: 20rem;
     }
 
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 430px) {
         #intro-history {
             width: 20rem;
         }
 
         #porter {
+            /* width: 20rem; */
             width: 20rem;
         }
 
