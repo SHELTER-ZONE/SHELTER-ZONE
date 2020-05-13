@@ -2,7 +2,6 @@
   <div class="home" data-aos="fade-up">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    123
   </div>
 </template>
 

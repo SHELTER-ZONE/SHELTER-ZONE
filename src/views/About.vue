@@ -1,5 +1,5 @@
 <template>
-
+    <!-- TODO 如果直接按上一頁 不會更新state -->
     <div id="about">
         <div class="pagelink">
             <a @click="changepage('AboutSZ')">SHELTER ZONE</a> /
