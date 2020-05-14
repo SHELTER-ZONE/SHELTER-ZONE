@@ -6,7 +6,7 @@
 
             <!-- Proladon -->
             <div id="proladon">
-                <img src="@/assets/avatar/proladon.png" data-aos="flip-right" data-aos-duration="2000">
+                <img id="proladon-img" src="@/assets/avatar/proladon.png" data-aos="flip-right" data-aos-duration="2000">
                 <p data-aos="fade-down" data-aos-delay="500">🔰 Server Owner</p>
                 <p id="proladon-id" style="font-size:1.5rem;" data-aos="fade-up">Proladon #7525</p>
             </div>
@@ -90,18 +90,36 @@
         width: 20rem;
     }
 
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 480px) {
         #intro-history {
             width: 20rem;
         }
 
         #porter {
-            /* width: 20rem; */
-            width: 20rem;
+            width: 100%;
         }
 
         #poster {
-            width: 20rem;
+            width: 100%;
         }
     }
+
+    @media screen and (max-width: 320px) {
+        #intro-history {
+            width: 20rem;
+        }
+
+        #porter {
+            width: 100%;
+        }
+
+        #poster {
+            width: 100%;
+        }
+        #proladon-img{
+            width: 100%;
+        }
+    }
+
+
 </style>

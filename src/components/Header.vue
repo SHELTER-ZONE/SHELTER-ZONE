@@ -1,17 +1,22 @@
 <template>
     <div id="header" class="header" :class="{home: home}">
-        <NavBar />
-        <div class="header_wrapper">
-            <h1 id="server-name" :class="{header_title: !home, server_name: home}" data-aos="fade-up"
-                data-aos-duration="2000" data-aos-delay="500">
-                SHELTER ZONE
-            </h1>
-            <h3 id="sub-title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1200">2018 / 6 / 27
-                Proladon#7525
-            </h3>
-            <button id="enter" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="2000" @click="entry"
-                :class="{hide: !home}">Entry</button>
+        <NavBar v-if="!home"/>
+        <div class="title-wrapper">
+            <div class="text-container">
+                <p id="server-name" :class="{header_title: !home, server_name: home}" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+                    SHELTER ZONE
+                </p>
+                
+                <p class="sub-title" data-aos="fade" data-aos-duration="2000" data-aos-delay="1500">
+                    2018 / 06 / 27 Proladon #7525
+                </p>
+                <button id="enter" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="3000" @click="entry"
+                    :class="{hide: !home}">
+                    Entry
+                </button>
+            </div>
         </div>
+
     </div>
 </template>
 
@@ -34,13 +39,14 @@
                 if (value == true) {
                     setTimeout(() => {
                         AOS.refreshHard()
-                    }, 2500);
+                    }, 1000);
                 } else {
                     setTimeout(() => {
-                        AOS.refresh()
-                    }, 1100);
+                        AOS.refreshHard()
+                    }, 1000);
                 }
             },
+
             entry() {
                 this.$router.push({
                     path: 'about'
@@ -63,7 +69,6 @@
 
 <style scoped>
     .header {
-        width: 100vw;
         height: 50vh;
         background-image: url(../assets/test.jpeg);
         background-repeat: no-repeat;
@@ -76,40 +81,48 @@
         height: 90vh;
     }
 
-    .header_wrapper {
-        margin: 0 auto;
+    .title-wrapper {
+        width: 100%;
         height: 100%;
+        position: relative;
     }
 
-    .server_name {
+    .text-container {
+        width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -150px 0 0 -500px;
-        font-size: 8rem;
-        transition: 2s;
-        animation: tohome 1s;
+        margin: 0;
+        padding: 0;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .server_name {
+        font-size: 8.5vw;
+        text-align: center;
+        transition: 1s;
+        animation: tohome 2s;
+    }
+
+    .sub-title {
+        color: white;
+        font-size: 1.2vw;
+        text-align: center;
+        letter-spacing: 5px;
     }
 
     .header_title {
-        margin-top: 80px;
-        font-size: 5rem;
-        animation: pagechange 1s;
-    }
-
-
-    #sub-title {
-        color: white;
-        font-size: 1em;
-        letter-spacing: 5px;
+        font-size: 5.5vw;
+        transition: 1s;
+        animation: pagechange 2s;
     }
 
     #enter {
         color: #2c3e50;
-        margin-top: 50px;
         background-color: transparent;
         border: transparent;
-        font-size: 2rem;
+        font-size: 2vw;
+        margin-top: 25px;
         padding: 10px;
         outline: none;
     }
@@ -126,108 +139,20 @@
     }
 
     @keyframes pagechange {
-        from {
-            font-size: 8rem;
-        }
-
-        to {
-            font-size: 5rem;
-        }
-
-        from {
-            margin-top: 300px;
-        }
-
-        to {
-            margin-top: 80px;
-        }
+        from {font-size: 8.5vw;}
+        to {font-size: 5.5vw;}
     }
 
     @keyframes tohome {
-        from {
-            font-size: 5rem;
-        }
+        from {font-size: 5.5vw;}
+        to {font-size: 8.5vw;}
 
-        to {
-            font-size: 8rem;
-        }
-
-        from {
-            margin-top: 80px;
-        }
-
-        to {
-            margin-top: 300px;
-        }
     }
 
-    /* Mobile */
-    @media screen and (max-width: 430px) {
-        .header_wrapper {
-            margin: 0 auto;
-            height: 100%;
-            vertical-align: middle;
-            justify-content: center;
-            padding: 0;
-        }
-
-        .server_name {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin: -80px 0 0 -187.5px;
-            font-size: 5rem;
-            transition: 2s;
-            animation: tohome 1s;
-        }
-
-        .header_title {
-            margin-top: 80px;
-            font-size: 2.5rem;
-            animation: pagechange 1s;
-        }
-
-        #sub-title {
-            color: white;
-            font-size: .5rem;
-            letter-spacing: 5px;
-            transition: 2s;
-        }
-
-        @keyframes pagechange {
-            from {
-                font-size: 5rem;
-            }
-
-            to {
-                font-size: 2.5rem;
-            }
-
-            from {
-                margin-top: 200px;
-            }
-
-            to {
-                margin-top: 80px;
-            }
-        }
-
-        @keyframes tohome {
-            from {
-                font-size: 2.5rem;
-            }
-
-            to {
-                font-size: 5rem;
-            }
-
-            from {
-                margin-top: 80px;
-            }
-
-            to {
-                margin-top: 200px;
-            }
-        }
+    @media screen and (max-width: 480){
+         .server_name{
+             font-size: 8vw;
+         }
     }
+
 </style>
