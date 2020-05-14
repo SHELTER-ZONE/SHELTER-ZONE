@@ -1,5 +1,5 @@
 <template>
-    <div id="nav" data-aos="fade-down" data-aos-duration="1000" :class="{homenav: $store.state.ishome}">
+    <div id="nav" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2000">
         <router-link to="/" @click.native="repage(true)">Home</router-link> |
         <router-link to="/about" @click.native="repage(false)">About</router-link> |
         <router-link to="/docs" @click.native="repage(false)">Docs</router-link> |
@@ -17,10 +17,10 @@
                 if (value == true){
                     setTimeout(() => {
                         AOS.refreshHard()
-                    }, 2500);
+                    }, 3000);
                 }else{
                     setTimeout(() => {
-                        AOS.refresh()
+                        AOS.refreshHard()
                     }, 1100);
                 }
             }
@@ -31,8 +31,8 @@
 
 <style lang="scss" scoped>
     #nav {
-        // visibility: hidden;
-        font-size: 20pt;
+        transition: 1s;
+        font-size: 3vw;
         padding: 30px;
         background: transparent;
 

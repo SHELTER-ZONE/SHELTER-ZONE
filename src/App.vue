@@ -28,7 +28,7 @@
     @import url(assets/css/article_card.css);
 
     body {
-        overflow-x: hidden;
+        // overflow-x: hidden;
         background-color: rgb(36, 48, 54);
     }
 
@@ -40,14 +40,7 @@
         color: #2c3e50;
     }
 
-    @media screen and (max-width: 300px){
-        #app{
-            width: 100vw;
-            height: 100vh;
-        }
-    }
-
-    .fade-enter-active,
+        .fade-enter-active,
     .fade-leave-active {
         transition: opacity .3s;
     }
