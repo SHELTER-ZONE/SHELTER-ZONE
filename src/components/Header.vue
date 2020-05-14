@@ -121,7 +121,7 @@
         color: #2c3e50;
         background-color: transparent;
         border: transparent;
-        font-size: 2vw;
+        font-size: 3vw;
         margin-top: 25px;
         padding: 10px;
         outline: none;
@@ -149,10 +149,23 @@
 
     }
 
-    @media screen and (max-width: 480){
+    @media screen and (max-width: 480px) and (max-width: 768px) and (max-width: 1024px){
          .server_name{
-             font-size: 8vw;
+             font-size: 15vw;
+            text-align: center;
+            transition: 1s;
+            animation: tohome 2s;
          }
+
+         #enter {
+            color: #2c3e50;
+            background-color: transparent;
+            border: transparent;
+            font-size: 10vw;
+            margin-top: 25px;
+            padding: 10px;
+            outline: none;
+        }
     }
 
 </style>
