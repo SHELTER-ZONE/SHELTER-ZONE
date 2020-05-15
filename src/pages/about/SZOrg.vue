@@ -1,16 +1,8 @@
 <template>
-    <div class="about_sz">
-        <div id="about-sz">
+  <div class="szorg">
+      <div id="about-org">
             <p class="article-title" data-aos="fade-up">About</p>
-            <p style="font-size:1.5rem;" data-aos="fade-up">SHELTER ZONE</p>
-
-            <!-- Proladon -->
-            <div id="proladon">
-                <img id="proladon-img" src="@/assets/avatar/proladon.png" data-aos="flip-right"
-                    data-aos-duration="2000">
-                <p data-aos="fade-down" data-aos-delay="500">🔰 Server Owner</p>
-                <p id="proladon-id" style="font-size:1.5rem;" data-aos="fade-up">Proladon #7525</p>
-            </div>
+            <p style="font-size:1.5rem;" data-aos="fade-up">Orgnaization</p>
 
             <!-- SZ Intro Content -->
             <div class="article" id="intro">
@@ -35,92 +27,16 @@
                 <img id="poster" src="@/assets/shelter/a1poster.jpg" alt="porter-madeon-shelter">
             </div>
         </div>
-    </div>
+
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "AboutSZ"
-    }
+export default {
+    name:"SZOrg",
+}
 </script>
 
 <style scoped>
-    * {
-        color: rgb(182, 182, 182);
-        font-size: 18px;
-    }
 
-    .article {
-        margin-top: 100px;
-    }
-
-    .article-title {
-        font-size: 2rem;
-        line-height: 60px;
-    }
-
-    .article-content {
-        margin: 0 auto;
-        width: 60%;
-        justify-content: center;
-    }
-
-    #about-sz {
-        width: 90%;
-        margin-top: 100px;
-        margin: 0 auto;
-        line-height: 40px;
-    }
-
-    #proladon {
-        margin-top: 100px;
-    }
-
-
-    #intro-name {
-        display: block;
-    }
-
-
-
-    #porter {
-        width: 40rem;
-    }
-
-    #poster {
-        margin-top: 20px;
-        width: 20rem;
-    }
-
-    @media screen and (max-width: 480px) {
-        #intro-history {
-            width: 20rem;
-        }
-
-        #porter {
-            width: 100%;
-        }
-
-        #poster {
-            width: 100%;
-        }
-    }
-
-    @media screen and (max-width: 320px) {
-        #intro-history {
-            width: 20rem;
-        }
-
-        #porter {
-            width: 100%;
-        }
-
-        #poster {
-            width: 100%;
-        }
-
-        #proladon-img {
-            width: 100%;
-        }
-    }
 </style>

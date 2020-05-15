@@ -1,18 +1,19 @@
 <template>
     <div id="header" class="header" :class="{home: home}">
-        <NavBar v-if="!home"/>
+        <NavBar v-if="!home" />
         <div class="title-wrapper">
             <div class="text-container">
-                <p id="server-name" :class="{header_title: !home, server_name: home}" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
+                <p id="server-name" :class="{header_title: !home, server_name: home}" data-aos="fade-up"
+                    data-aos-duration="2000" data-aos-delay="800">
                     SHELTER ZONE
                 </p>
-                
+
                 <p class="sub-title" data-aos="fade" data-aos-duration="2000" data-aos-delay="1500">
                     2018 / 06 / 27 Proladon #7525
                 </p>
                 <button id="enter" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="3000" @click="entry"
                     :class="{hide: !home}">
-                    Entry
+                    ENTRY
                 </button>
             </div>
         </div>
@@ -46,7 +47,6 @@
                     }, 1000);
                 }
             },
-
             entry() {
                 this.$router.push({
                     path: 'about'
@@ -118,17 +118,24 @@
     }
 
     #enter {
-        color: #2c3e50;
+        color: aquamarine;
+        border: aquamarine 1px solid;
         background-color: transparent;
-        border: transparent;
-        font-size: 3vw;
-        margin-top: 25px;
-        padding: 10px;
+        border-radius: 15px;
+        /* border: transparent; */
+        font-size: 2vw;
+        margin-top: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 7px;
+        padding-bottom: 7px;
         outline: none;
+        letter-spacing: 10px;
     }
 
     #enter:hover {
-        color: aquamarine;
+        color: rgb(80, 80, 80);
+        background-color: aquamarine;
         text-decoration: underline;
         text-underline-offset: 20px;
         transition: 1.5s;
@@ -136,28 +143,47 @@
 
     .hide {
         color: transparent !important;
+        border: none !important;
+        background-color: transparent !important;
     }
 
     @keyframes pagechange {
-        from {font-size: 8.5vw;}
-        to {font-size: 5.5vw;}
+        from {
+            font-size: 8.5vw;
+        }
+
+        to {
+            font-size: 5.5vw;
+        }
     }
 
     @keyframes tohome {
-        from {font-size: 5.5vw;}
-        to {font-size: 8.5vw;}
+        from {
+            font-size: 5.5vw;
+        }
+
+        to {
+            font-size: 8.5vw;
+        }
 
     }
 
-    @media screen and (max-width: 480px) and (max-width: 768px) and (max-width: 1024px){
-         .server_name{
-             font-size: 15vw;
+    @media screen and (max-width: 480px) and (max-width: 768px) and (max-width: 1024px) {
+        
+        .server_name {
+            font-size: 15vw;
             text-align: center;
             transition: 1s;
             animation: tohome 2s;
-         }
+        }
 
-         #enter {
+        .header_title {
+            font-size: 15vw;
+            transition: 1s;
+            animation: pagechange 2s;
+        }
+
+        #enter {
             color: #2c3e50;
             background-color: transparent;
             border: transparent;
@@ -167,5 +193,32 @@
             outline: none;
         }
     }
+    
+    @media screen and (max-width: 425px) {
+        
+        .header_title {
+            font-size: 10vw;
+            transition: 1s;
+            animation: pagechange 2s;
+        }
 
+        #enter {
+            color: #2c3e50;
+            background-color: transparent;
+            border: transparent;
+            font-size: 7vw;
+            margin-top: 25px;
+            padding: 10px;
+            outline: none;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        
+        .header_title {
+            font-size: 15vw;
+            transition: 1s;
+            animation: pagechange 2s;
+        }
+    }
 </style>

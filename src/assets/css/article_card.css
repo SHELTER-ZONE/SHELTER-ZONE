@@ -37,8 +37,8 @@
     margin: 10px;
 }
 
-.card-content {
-    font-size: 1rem;
+.card-content , span{
+    font-size: 1.2rem;
     width: 100%;
     text-align: justify;
 }

@@ -1,41 +1,53 @@
 <template>
     <div class="doc_card">
-        <div class="card" v-for="doc in docs" :key="doc.name">
-            <a :href="doc.url"></a>
-
+        <div id="about">
+            <div class="pagelink">
+                <a class="inpage-link" @click="changepage('SZDoc')">Documentation 文件</a> /
+                <a class="inpage-link" @click="changepage('SZProject')">Project 專案</a> /
+                <a class="inpage-link" @click="changepage('SZApp')">Application 應用</a>
+            </div>
+            <transition name="fade">
+                <component v-bind:is='show' />
+            </transition>
         </div>
-
     </div>
 </template>
 
 <script>
+    import SZDoc from '@/pages/docs/SZDoc.vue'
+    import SZProject from '@/pages/docs/SZProject.vue'
+    import SZApp from '@/pages/docs/SZApp.vue'
     export default {
         name: "DocsCard",
+        components: {
+            SZDoc,
+            SZProject,
+            SZApp,
+        },
         data() {
             return {
-                docs: {
-                    doc1: {
-                        name: "Ask Questions Guide",
-                        url: "https://shelter-zone.github.io/Ask-Questions-Guide-Doc/"
-                    },
-                    doc2: {
-                        name: "Ask Questions Guide",
-                        url: "https://shelter-zone.github.io/Ask-Questions-Guide-Doc/"
-                    },
-                }
+                show: "SZDoc",
+            }
+        },
+        methods: {
+            changepage(page) {
+                this.show = page
             }
         }
     }
 </script>
 
-<style scoped>
-    .card {
-        width: 80%;
-        height: 50px;
-        margin: 0 auto;
-        background: azure;
-        margin-top: 50px;
+<style lang="scss" scoped>
+    @import url('../assets/css/inpage_link.css');
+
+    * {
+        color: rgb(182, 182, 182);
     }
 
-    a {}
+    .inpage-link{
+        color:mediumspringgreen;
+    }
+    .inpage-link:hover{
+        color: hotpink;
+    }
 </style>

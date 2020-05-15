@@ -1,11 +1,11 @@
 <template>
     <div id="app">
         <Header />
-        <transition name="fade" >
-            <router-view id="router-view" v-if="$store.state.ishome==false"/>
+        <transition name="fade">
+            <router-view id="router-view" v-if="$store.state.ishome==false" />
         </transition>
         <GoTop />
-        <Footer id="footer"/>
+        <Footer id="footer" />
     </div>
 </template>
 
@@ -28,7 +28,7 @@
     @import url(assets/css/article_card.css);
 
     body {
-        // overflow-x: hidden;
+        overflow-x: hidden;
         background-color: rgb(36, 48, 54);
     }
 
@@ -40,7 +40,7 @@
         color: #2c3e50;
     }
 
-        .fade-enter-active,
+    .fade-enter-active,
     .fade-leave-active {
         transition: opacity .3s;
     }
@@ -50,11 +50,11 @@
         opacity: 0;
     }
 
-    #router-view{
+    #router-view {
         margin-top: 100px;
     }
 
-    #footer{
+    #footer {
         clear: both;
     }
 </style>

@@ -22,7 +22,12 @@ Vue.use(VueRouter)
   path: '/docs',
   name: 'Docs',
   component: () => import(/* webpackChunkName: "about" */ '../views/Docs.vue')
-  },
+      },
+      {
+        path: '/works',
+        name: 'Works',
+        component: () => import(/* webpackChunkName: "about" */ '../views/Works.vue')
+        },
   {
   path: '/join',
   name: 'Join',
