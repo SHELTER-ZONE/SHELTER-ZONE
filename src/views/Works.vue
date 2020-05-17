@@ -11,13 +11,13 @@
 </template>
 
 <script>
-    import works3D from '@/pages/works/Works3D.vue'
-    import works2D from '@/pages/works/Works2D.vue'
+    import Works3D from '@/pages/works/Works3D.vue'
+    import Works2D from '@/pages/works/Works2D.vue'
     export default {
         name: "Works",
         components: {
-            works3D,
-            works2D,
+            Works3D,
+            Works2D,
         },
         data() {
             return {
