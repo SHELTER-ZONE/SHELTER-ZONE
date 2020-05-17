@@ -1,8 +1,8 @@
 <template>
     <div class="works">
         <div class="pagelink">
-            <a class="inpage-link" @click="changepage('works3D')">3D ArtWorks</a> /
-            <a class="inpage-link" @click="changepage('works2D')">2D ArtWorks</a> /
+            <a id="works3D" class="inpage-link" @click="changepage('works3D')">3D ArtWorks</a> /
+            <a id="works2D" class="inpage-link" @click="changepage('works2D')">2D ArtWorks</a> /
         </div>
         <transition name="fade">
             <component v-bind:is='show' />
@@ -27,11 +27,19 @@
         methods: {
             changepage(page) {
                 this.show = page
+                 const alink = document.querySelectorAll('a')
+                alink.forEach(x => {
+                    x.classList.remove("active")
+                });
+                document.querySelector(`#${page}`).classList.add("active")
             }
         }
     }
 </script>
 
 <style scoped>
-
+.active{
+    color: hotpink;
+    border: hotpink 1px solid;
+}
 </style>

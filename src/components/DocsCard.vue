@@ -2,9 +2,9 @@
     <div class="doc_card">
         <div id="about">
             <div class="pagelink">
-                <a class="inpage-link" @click="changepage('SZDoc')">Documentation 文件</a> /
-                <a class="inpage-link" @click="changepage('SZProject')">Project 專案</a> /
-                <a class="inpage-link" @click="changepage('SZApp')">Application 應用</a>
+                <a id="SZDoc" class="inpage-link" @click="changepage('SZDoc')">Documentation 文件</a> /
+                <a id="SZProject" class="inpage-link" @click="changepage('SZProject')">Project 專案</a> /
+                <a id="SZApp" class="inpage-link" @click="changepage('SZApp')">Application 應用</a>
             </div>
             <transition name="fade">
                 <component v-bind:is='show' />
@@ -32,6 +32,11 @@
         methods: {
             changepage(page) {
                 this.show = page
+                const alink = document.querySelectorAll('a')
+                alink.forEach(x => {
+                    x.classList.remove("active")
+                });
+                document.querySelector(`#${page}`).classList.add("active")
             }
         }
     }
@@ -50,4 +55,9 @@
     .inpage-link:hover{
         color: hotpink;
     }
+
+    .active{
+    color: hotpink;
+    border: hotpink 1px solid;
+}
 </style>

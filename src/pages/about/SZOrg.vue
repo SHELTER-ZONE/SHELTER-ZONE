@@ -6,26 +6,25 @@
 
             <!-- SZ Intro Content -->
             <div class="article" id="intro">
-                <div class="article-title" data-aos="fade-down">簡介</div>
+                <div class="article-title title1" data-aos="fade-down">SHELTER ZONE Orgnaization (SZ.Org)</div>
                 <div class="article-content">
-                    <p>SHELTER ZONE 是語音軟體 Discord 上的伺服器(Server)，由 Proladon #7525 創立於 2018/6/27</p>
-                    <p>起初為一般綜合聊天交流群並以動漫、電玩為主，由 @Gamer @ACG @Creator 三個身分組構成</p>
-                    <p>現轉變成技術交流群，身分組結構變為 @Coder @3D Artist @2D Artist 主要構成</p>
-                    <p>目前以程式技術交流最為活躍</p>
+                    <span>其實在目前我們這邊指的組織是指Github上SZ專屬的組織，
+                        但是在未來組織會指向整個 SZ，目前SZ正處於由伺服器(Server)轉向組織(Orgnaization)的過程中。<br>
+                        SZ幾乎所有的專案、應用、文件等都會放在 Github SZ.Org 上管理與呈現，基本上所有的專案都是開源的。
+                        也因此，如果成員想參加或是協作伺服器的專案的話，必須先加入SZ.Org，並且需要學習如何使用Github，
+                        如果你是第 一次使用 Github 也不用擔心，伺服器內的所有 @Coder 都會提供幫助。
+                    </span> <br>
+                    <p class="card-title title2">如何加入</p>
+                    <span>
+                        註冊申請Github帳號後，直接給 @Proladon 你的Github ID 或是 你註冊的信箱。
+                    </span>
+                    <img id="SZOrg-img" src="@/assets/shelter/github-org.png" data-aos="flip-right"
+                    data-aos-duration="2000">
+                    
                 </div>
             </div>
 
-            <div class="article" id="intro-name">
-                <div class="article-title" data-aos="fade-down">名稱的由來</div>
-                <img id="porter" src="@/assets/shelter/porter-madeon-shelter.jpg" alt="porter-madeon-shelter">
-                <div class="article-content">
-                    <p>靈感來自群主很喜歡的 DJ. Porter Robinson 在 2016 與 DJ. Madeon 合作的一首單曲「Shelter」</p>
-                    <p>希望伺服器能接納任何人成為大家的僻護所(Shelter) ，而每個主題的群體各自一個 Shelter </p>
-                    <p>所以伺服器這個區域(Zone)就是由多個 Shelter 共同組成的一個 Shelter Zone</p>
-                    <p>BTW. 同年與日本 A1 Picture 動畫公司合作的 Shelter 動畫短片，釋出日剛好是群主的生日</p>
-                </div>
-                <img id="poster" src="@/assets/shelter/a1poster.jpg" alt="porter-madeon-shelter">
-            </div>
+            
         </div>
 
   </div>
@@ -38,5 +37,19 @@ export default {
 </script>
 
 <style scoped>
+.article{
+    width: 60%;
+}
 
+.article-content span{
+    line-height: 40px;
+}
+
+.article-content .title2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#SZOrg-img{
+    margin-top: 50px;
+}
 </style>

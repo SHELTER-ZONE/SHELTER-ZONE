@@ -18,7 +18,7 @@
                 projects: {
                     project1: {
                         name: "💾 3D Project 0 - Server Map",
-                        url: "https://github.com/SHELTER-ZONE/Coder_Cert",
+                        url: "https://github.com/SHELTER-ZONE/3D-Project0-Server-Map",
                         des: "3D 專案0 | 3D Project 0"
                     },
                 }

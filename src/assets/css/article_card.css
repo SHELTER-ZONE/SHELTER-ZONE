@@ -15,6 +15,7 @@
 
 .article{
     margin: 0 auto;
+    margin-top: 180px;
 }
 .article-title {
     font-size: 2rem;
@@ -42,6 +43,7 @@
     width: 100%;
     text-align: justify;
 }
+
 
 .title1 {
     margin-bottom: 50px;

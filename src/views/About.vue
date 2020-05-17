@@ -3,11 +3,11 @@
     <!-- TODO 顯示目前是在哪頁 -->
     <div id="about">
         <div class="pagelink">
-            <a class="inpage-link" @click="changepage('AboutSZ')">SHELTER ZONE</a> /
-            <a class="inpage-link" @click="changepage('SZStatus')">Status 現況</a> /
-            <a class="inpage-link" @click="changepage('SZHistory')">History 歷史事件</a> /
-            <a class="inpage-link" @click="changepage('SZOrg')">Organization 組織</a> /
-            <a class="inpage-link">Anecdote 軼事</a>
+            <a id="AboutSZ" class="inpage-link active" @click="changepage('AboutSZ')" >SHELTER ZONE</a> /
+            <a id="SZStatus" class="inpage-link" @click="changepage('SZStatus')" >Status 現況</a> /
+            <a id="SZHistory" class="inpage-link" @click="changepage('SZHistory')" >History 歷史事件</a> /
+            <a id="SZOrg" class="inpage-link" @click="changepage('SZOrg')" >Organization 組織</a> /
+            <a  id="SZAnecdote" class="inpage-link" @click="changepage('SZAnecdote')" >Anecdote 軼事</a>
         </div>
         <transition name="fade">
             <component v-bind:is='show' />
@@ -21,12 +21,14 @@
     import SZStatus from '@/pages/about/SZStatus.vue'
     import SZHistory from '@/pages/about/SZHistory.vue'
     import SZOrg from '@/pages/about/SZOrg.vue'
+    import SZAnecdote from '@/pages/about/SZAnecdote.vue'
     export default {
         components: {
             AboutSZ,
             SZStatus,
             SZHistory,
-            SZOrg
+            SZOrg,
+            SZAnecdote,
         },
         data() {
             return {
@@ -36,6 +38,11 @@
         methods:{
             changepage(page){
                 this.show = page
+                const alink = document.querySelectorAll('a')
+                alink.forEach(x => {
+                    x.classList.remove("active")
+                });
+                document.querySelector(`#${page}`).classList.add("active")
             }
         }
     }
@@ -53,5 +60,10 @@
 
 .inpage-link:hover{
     color: hotpink;
+}
+
+.active{
+    color: hotpink;
+    border: hotpink 1px solid;
 }
 </style>

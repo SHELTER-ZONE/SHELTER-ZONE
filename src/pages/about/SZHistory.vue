@@ -57,15 +57,6 @@
             </div>
 
             <div class="article-wrapper">
-                <div class="article-title title1" data-aos="fade-down">螢幕分享課程</div>
-                <div class="article-content">
-                    <span>
-                        
-                    </span>
-                </div>
-            </div>
-
-            <div class="article-wrapper">
                 <div class="article-title title2" data-aos="fade-down" >1th 周念紀年宣傳影片</div>
                 <p class="card-date" style="text-align: center;">2018 / 8 / 20</p>
                 <div class="article-content">
