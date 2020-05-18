@@ -20,6 +20,8 @@
                     <p>起初為一般綜合聊天交流群並以動漫、電玩為主，由 @Gamer @ACG @Creator 三個身分組構成</p>
                     <p>現轉變成技術交流群，身分組結構變為 @Coder @3D Artist @2D Artist 主要構成</p>
                     <p>目前以程式技術交流最為活躍</p>
+                    <p>詳細伺服器介紹可見 <a id="sz-memoir-link"
+                            href="https://shelter-zone.github.io/SZ-Memoir-Server-Management/#前言" target="_blank">SZ 回憶錄</a> (撰寫中)</p>
                 </div>
             </div>
 
@@ -63,6 +65,11 @@
         margin: 0 auto;
         width: 60%;
         justify-content: center;
+    }
+
+    #sz-memoir-link {
+        font-size: 1.2em;
+        color: lightskyblue;
     }
 
     #about-sz {

@@ -18,11 +18,10 @@
                     <span>
                         註冊申請Github帳號後，直接給 @Proladon 你的Github ID 或是 你註冊的信箱。
                     </span>
-                    <img id="SZOrg-img" src="@/assets/shelter/github-org.png" data-aos="flip-right"
-                    data-aos-duration="2000">
-                    
                 </div>
             </div>
+            <img id="SZOrg-img" src="@/assets/shelter/github-org.png" data-aos="flip-right"
+            data-aos-duration="2000">
 
             
         </div>
@@ -38,7 +37,7 @@ export default {
 
 <style scoped>
 .article{
-    width: 60%;
+    width: 70%;
 }
 
 .article-content span{
@@ -50,6 +49,10 @@ export default {
     margin-bottom: 30px;
 }
 #SZOrg-img{
+    margin: 0 auto;
     margin-top: 50px;
+    width: 80vw;
 }
+
+
 </style>

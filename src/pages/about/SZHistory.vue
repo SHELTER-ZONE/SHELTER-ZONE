@@ -55,14 +55,27 @@
                     </div>
                 </div>
             </div>
+            <div class="article-card-wrapper">
+                <div class="article-wrapper">
+                    <div class="article-title title2" data-aos="fade-down">1th 周念紀年宣傳影片</div>
+                    <p class="card-date" style="text-align: center;">2018 / 8 / 20</p>
+                    <div class="article-content">
+                        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/9dfugMmd9mM"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
 
             <div class="article-wrapper">
-                <div class="article-title title2" data-aos="fade-down" >1th 周念紀年宣傳影片</div>
-                <p class="card-date" style="text-align: center;">2018 / 8 / 20</p>
+                <div class="article-title title1" data-aos="fade-down">幽靈清理機制</div>
+                <p class="card-date" style="text-align: center;">2019 / 1 / 19</p>
                 <div class="article-content">
-                    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/9dfugMmd9mM" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+                    <code>
+                        30天 未進行 "任何互動"(訊息/語音聊天) 及 未上線者將於每個 "星期六" 發佈成員欲剔除名單，
+                        並於後日 "星期一" 進行剔除 (P.S. 剔除後仍可透過邀請連結重新加入，並非封鎖)
+                    </code>
                 </div>
             </div>
         </div>
@@ -76,9 +89,10 @@
 </script>
 
 <style scoped>
-    *{
+    * {
         font: size 18px;
     }
+
     .title-wrapper {
         margin-bottom: 150px;
     }
@@ -86,5 +100,11 @@
     .article-card-wrapper {
         padding: 20px;
         margin-bottom: 100px;
+    }
+    code{
+        color: orange;
+        background: rgb(30, 30, 30);
+        padding: 20px;
+        border-radius: 10px;
     }
 </style>

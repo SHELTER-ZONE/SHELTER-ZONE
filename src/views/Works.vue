@@ -1,7 +1,7 @@
 <template>
     <div class="works">
         <div class="pagelink">
-            <a id="works3D" class="inpage-link" @click="changepage('works3D')">3D ArtWorks</a> /
+            <a id="works3D" class="inpage-link active" @click="changepage('works3D')">3D ArtWorks</a> /
             <a id="works2D" class="inpage-link" @click="changepage('works2D')">2D ArtWorks</a> /
         </div>
         <transition name="fade">

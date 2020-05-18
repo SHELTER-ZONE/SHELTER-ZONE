@@ -8,12 +8,17 @@
 
             <div class="article" id="intro">
                 <div class="article-title title1" data-aos="fade-down">Right Now</div>
-                <p class="card-date" style="text-align: center;">2020 / 5 / 18</p>
+                <p class="card-date" style="text-align: center;">2020 / 5 / 18 update</p>
                 <div class="article-content">
                     <span>
                         現在以Coding程式交流最為活躍也擁有較多的協作專案與活動正在進行，
                         而3D及2D有些沉寂，目前也正試圖規劃3D專案試圖推動3D的交流活動，
                         與招收新的3D與2D心血來活躍。
+                    </span>
+                    <p class="title3" >幽靈成員清理</p>
+                    <span>
+                        自2019/1/19 至 2020 / 5 / 18 <br>
+                        根據伺服器幽靈清理機制，已共計踢除 284 名幽靈成員。
                     </span>
                 </div>
 
@@ -68,11 +73,18 @@
     .article-content {
         margin-bottom: 150px;
 
-        p {
+        .article-content p {
             font-size: 1.2rem;
             color: orange;
             line-height: 40px;
         }
+    }
+
+    .title3{
+        color: rgb(182, 182, 182);
+        font-size: 1.4rem;
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
 
     #roadmap-link,
