@@ -9,7 +9,7 @@
                 </p>
 
                 <p class="sub-title" data-aos="fade" data-aos-duration="2000" data-aos-delay="1500">
-                    2018 / 06 / 27 Proladon #7525
+                    Technical Exchange Community
                 </p>
                 <button id="enter" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="3000" @click="entry"
                     :class="{hide: !home}">

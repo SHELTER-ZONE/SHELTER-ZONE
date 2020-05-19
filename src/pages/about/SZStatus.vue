@@ -8,16 +8,18 @@
 
             <div class="article" id="intro">
                 <div class="article-title title1" data-aos="fade-down">Right Now</div>
-                <p class="card-date" style="text-align: center;">2020 / 5 / 18 update</p>
+                <p class="card-date" style="text-align: center;">2020 / 5 / 19 update</p>
                 <div class="article-content">
                     <span>
-                        現在以Coding程式交流最為活躍也擁有較多的協作專案與活動正在進行，
-                        而3D及2D有些沉寂，目前也正試圖規劃3D專案試圖推動3D的交流活動，
-                        與招收新的3D與2D心血來活躍。
+                        目前已正準備邁向組織化，詳見 <a id="org_doc" href="https://github.com/SHELTER-ZONE/Oragnaization-Structure/wiki" target="_blank">Oragnaization-Structure</a>
+                    </span>
+                    <br>
+                    <span>
+                        現在以Coding程式交流最為活躍也擁有較多的協作專案與活動正在進行，而3D及2D有些沉寂，因為被群組放置Play了一段時間，目前也正試圖規劃3D專案試圖推動3D的交流活動，與招收新的3D與2D新血來活躍。
                     </span>
                     <p class="title3" >幽靈成員清理</p>
                     <span>
-                        自2019/1/19 至 2020 / 5 / 18 <br>
+                        自2019/1/19 至 2020 / 5 / 19 <br>
                         根據伺服器幽靈清理機制，已共計踢除 284 名幽靈成員。
                     </span>
                 </div>
@@ -51,7 +53,7 @@
             </div>
             <div class="article-title title1" data-aos="fade-down">SZ State</div>
             <div class="article-content">
-                <p>**需稍微等待加載**</p>
+                <p id="wait-connect">**需稍微等待加載**</p>
                 <span>STATBOT 會統計每日伺服器內，不管是成員個人還是各頻道的文字訊息量與語音在現時間數據。</span>
                 <iframe id="statbot" src="https://statbot.net/dashboard/445157253385814016/messages"
                     frameborder="0"></iframe>
@@ -73,7 +75,7 @@
     .article-content {
         margin-bottom: 150px;
 
-        .article-content p {
+        #wait-connect {
             font-size: 1.2rem;
             color: orange;
             line-height: 40px;
@@ -86,7 +88,8 @@
         margin-top: 50px;
         margin-bottom: 10px;
     }
-
+    
+    #org_doc,
     #roadmap-link,
     #core-target {
         font-size: 1.2em;

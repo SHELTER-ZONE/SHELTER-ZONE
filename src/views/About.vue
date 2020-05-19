@@ -6,7 +6,7 @@
             <a id="AboutSZ" class="inpage-link active" @click="changepage('AboutSZ')" >SHELTER ZONE</a> /
             <a id="SZStatus" class="inpage-link" @click="changepage('SZStatus')" >Status 現況</a> /
             <a id="SZHistory" class="inpage-link" @click="changepage('SZHistory')" >History 歷史事件</a> /
-            <a id="SZOrg" class="inpage-link" @click="changepage('SZOrg')" >Organization 組織</a> /
+            <a id="SZOrg" class="inpage-link" @click="changepage('SZOrg')" >Github Org 協作組織</a> /
             <a  id="SZAnecdote" class="inpage-link" @click="changepage('SZAnecdote')" >Anecdote 軼事</a>
         </div>
         <transition name="fade">

@@ -19,16 +19,21 @@
                         url: "https://shelter-zone.github.io/Ask-Questions-Guide-Doc/",
                         des: " 如何詢問問題指南 | Ask Questions Guide"
                     },
-                    doc2: {
+                     doc2: {
+                        name: "📙 SZ 組織結構",
+                        url: "https://github.com/SHELTER-ZONE/Oragnaization-Structure/wiki",
+                        des: "SZ 組織結構、理念與說明"
+                    },
+                    doc3: {
                         name: "📑 課程開課指南",
                         url: "https://hackmd.io/@3iMCUso7TlKlC47LfsqoSA/SZ-1902",
                         des: "螢幕分享課程開課指南"
                     },
-                    doc3: {
+                    doc4: {
                         name: "📑 課程規劃與準備指南",
                         url: "https://hackmd.io/@pvAwpBIcRXOl8ngyCpR06A/r1yBiK4XH",
                         des: "如何規劃螢幕分享課程與準備課程指南"
-                    }
+                    },
                 },
             }
         }

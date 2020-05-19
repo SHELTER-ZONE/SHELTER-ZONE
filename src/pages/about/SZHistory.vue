@@ -78,6 +78,17 @@
                     </code>
                 </div>
             </div>
+
+            <div class="article-wrapper">
+                <div class="article-title title1" data-aos="fade-down">Coder 認證</div>
+                <p class="card-date" style="text-align: center;">2020 / 4 / 12</p>
+                <div class="article-content">
+                    <span>
+                        為分流基礎與非基礎的問題討論，與考慮日後管理需求，故以身分組與頻道進行區分。並以程式語言測試來驗證以區分身分組。
+                    </span>
+                </div>
+            </div>
+
         </div>
     </div>
 </template>
