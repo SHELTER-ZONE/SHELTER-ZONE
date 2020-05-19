@@ -24,6 +24,11 @@
                         url: "https://github.com/SHELTER-ZONE/Coder_Cert",
                         des: "Coder 程式語言身份組認證 | Coder Certification"
                     },
+                    app3: {
+                        name: "🚧 邊境檢查",
+                        url: "https://shelter-zone.github.io/Entry_CheckZone/",
+                        des: "加入SZ前的檢查認證 | Entry CheckZone"
+                    },
                 },
             }
         }
