@@ -1,6 +1,7 @@
 <template>
   <div class="header">
-
+      <p>Hello World!</p>
+      
   </div>
 </template>
 
@@ -13,5 +14,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+p{
+    color: white;
+}
 </style>

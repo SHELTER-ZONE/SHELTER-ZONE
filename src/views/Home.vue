@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <div class="page-wrapper">
+        <div class="hpage-wrapper">
 
             <div class="bg-wrapper" :class="{fade:fade}"></div>
 
@@ -83,7 +83,7 @@
     //              Mobile              //
     //============== //
 
-    .page-wrapper {
+    .hpage-wrapper {
         display: flex;
         flex-direction: column;
         @include maxparent()
