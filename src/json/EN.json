@@ -2,7 +2,96 @@
     "navbtn":[
         "About",
         "Status",
-        "Docs",
-        "Links"
-    ]
+        "History",
+        "Documents",
+        "Join"
+    ],
+    "about":{
+        "card1":{
+            "title":"Intro",
+            "content":"英文尚未翻譯，請暫時切換中文"
+        },
+        "card2":{
+            "title":"Origin of the name",
+            "content":"..."
+        },
+        "card3":{
+            "title":"",
+            "content":"..."
+        }
+    },
+    "status":{
+        "members": "Server Members",
+        "online":"Current Online",
+        "discussion":{
+            "title":"Category",
+            "cd":"Coding",
+            "cdstatus":"active",
+            "d3":"3D Tech",
+            "d3status":"inactive",
+            "d2":"2D Tech",
+            "d2status":"inactive"
+        },
+        "role":{
+            "title":"Roles"
+        },
+        "channel":{
+            "title":"Channels",
+            "text":"Text Channel",
+            "voice":"Voice Channel"
+        }
+    },
+    "docs":{
+        "doc1":{
+            "name":"Technological-Exchange-Guide",
+            "url":"https://shelter-zone.github.io/Technological-Exchange-Guide/",
+            "intro":"How to - Technological Exchange Guide"
+        },
+        "doc2":{
+            "name":"SZ_CodeBasic",
+            "url":"https://github.com/SHELTER-ZONE/SZ_CodeBasic",
+            "intro":"程式基礎練習題目"
+        },
+        "doc3":{
+            "name":"Oragnaization-Structure",
+            "url":"https://github.com/SHELTER-ZONE/Oragnaization-Structure",
+            "intro":"SZ Oragnaization Structure"
+        },
+        "doc4":{
+            "name":"Discord_Bot_FAQ",
+            "url":"https://github.com/SHELTER-ZONE/Discord_Bot_FAQ",
+            "intro":"Discord bot develop FAQ"
+        }
+    },
+    "applications":{
+        "app1":{
+            "name":"Entry_CheckZone",
+            "url":"https://shelter-zone.github.io/Entry_CheckZone/",
+            "intro":"SZ Server Entry Check"
+        }
+    },
+    "project":{
+        "proj1":{
+            "name":"Technical-Community-Survey",
+            "url":"https://github.com/SHELTER-ZONE/Technical-Community-Survey",
+            "intro":"技術交流興趣調查問卷"
+        }
+    },
+    "join":{
+        "discord":{
+            "name":"Discord",
+            "img":"/img/discord.png",
+            "title":"SHELTER ZONE Discord Server",
+            "content":"Server Permanent link",
+            "link":"https://discord.gg/R75DXHH"
+        },
+        "github":{
+            "name":"Github",
+            "img":"/img/github.png",
+            "title":"SHELTER ZONE Github Organization",
+            "content":"",
+            "link":"https://github.com/SHELTER-ZONE",
+            "join":"Or sign up direct from Proladon#7525"
+        }
+    }
 }

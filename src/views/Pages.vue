@@ -1,6 +1,5 @@
 <template>
     <div class="pages">
-        <div class="page-wrapper">
 
             <Navigator v-if="isnav" :data="data" @changeto="changeto"/>
             
@@ -8,9 +7,8 @@
                 <component v-bind:is='show' :data="data"></component>
             </div>
 
-            <div class="statebar-wrapper">
-
-                <div class="state-control">
+        <div class="statebar-wrapper">
+            <div class="state-control">
                     <p id="backbtn" v-if="!isnav" @click="backnav">←</p>
                     <p id="homebtn" v-if="isnav" @click="gohome">■</p>
                     <p>{{show}}</p>
@@ -18,13 +16,10 @@
                         <span :class="{highlight:lang==='EN'}" @click="switchlang('EN')">EN</span> / <span
                             :class="{highlight:lang==='CH'}" @click="switchlang('CH')">CH</span>
                     </p>
-
-                    <p id="gotopbtn">▲</p>
+                    <p id="gotopbtn" @click="gotop">▲</p>
                 </div>
-
-            </div>
-
         </div>
+
     </div>
 </template>
 
@@ -32,15 +27,24 @@
     import anime from 'animejs'
     // Json
     import EN from '../json/EN.json'
+    import CH from '../json/CH.json'
     // Component
     import Navigator from '@/components/Navigator.vue'
     // Views
     import About from '@/views/About.vue'
+    import Status from '@/views/Status.vue'
+    import History from '@/views/History.vue'
+    import Documents from '@/views/Documents.vue'
+    import Join from '@/views/Join.vue'
     export default {
         name: "Pages",
         components:{
             Navigator,
             About,
+            Status,
+            History,
+            Join,
+            Documents,
         },
         props: {
             lang: String,
@@ -55,12 +59,13 @@
         methods: {
             switchlang(lang) {
                 this.$emit("switchlang", lang)
+                if (lang === 'EN'){this.data = EN}
+                else if (lang === 'CH'){this.data = CH}
             },
             
             changeto(page){
                 this.show = page
                 this.isnav = false
-                console.log(this.isnav)
             },
             
             gohome(){
@@ -70,9 +75,23 @@
             backnav(){
                 this.isnav = true
                 this.show = "Menu"
+            },
+            gotop(){
+                window.scrollTo({
+                    top:0,
+                    behavior: 'smooth'
+                })
             }
         },
         mounted(){
+            if(this.lang==='EN'){this.data=EN}
+            else if(this.lang==='CH'){this.data=CH}
+            anime({
+                targets: '.statebar-wrapper',
+                width: '100%',
+                easing: 'easeInOutQuad',
+            })
+            
             anime({
                 targets: '.state-control',
                 keyframes: [
@@ -82,6 +101,7 @@
                 duration: 1500,
                 easing: 'easeInOutQuad'
             })
+
         }
     }
 </script>
@@ -126,13 +146,7 @@
         position: relative;
         animation: fadein ease-in-out 1s;
     }
-    /*-----------------*/
-    /*      page-wrapper       */
-    /*-----------------*/
-    .page-wrapper{
-        width: 100%;
-        height: 100%;
-    }
+
     /*-----------------*/
     /*components-wrapper*/
     /*-----------------*/
@@ -140,40 +154,32 @@
         width: 100%;
         height: 96%;
     }
-    /*-----------------*/
-    /*   statebar-wrapper   */
-    /*-----------------*/
+    // /*-----------------*/
+    // /*   statebar-wrapper   */
+    // /*-----------------*/
     .statebar-wrapper{
-        width: 100%;
-        height: 4%;
+        width: 0;
+        height: 5%;
         position: fixed;
         bottom: 0;
-        background-color: mediumturquoise;
-        animation: expandbar ease-in-out 1s;
+        background: mediumturquoise;
     }
-
-    .show{
-        opacity: 100;
-    }
-
-    @keyframes expandbar{
-        from{width: 0;}
-        to{width: 100%;}
-    }
-    /*-----------------*/
-    /*        state-control        */
-    /*-----------------*/
+    // /*-----------------*/
+    // /*        state-control        */
+    // /*-----------------*/
     .state-control{
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
-        position: sticky;
-        bottom: 0;
         opacity: 0;
+        span{
+            cursor: pointer;
+        }
     }
 
     #homebtn, #backbtn, #gotopbtn{
         width: 50px;
+        cursor: pointer;
     }
 </style>

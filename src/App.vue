@@ -41,9 +41,18 @@
 </script>
 
 <style lang="scss">
+@font-face {
+    font-family: DisposableDroid BB;
+    src: local("@/assets/font/DisposableDroidBB.ttf");
+}
+@font-face {
+    font-family: Aura點陣宋;
+    src: local("@/assets/font/Aura點陣宋.ttf");
+}
     * {
         margin: 0;
         padding: 0;
+        font-family: DisposableDroid BB, Auraka點陣宋;
     }
 
     html,
@@ -52,5 +61,12 @@
         width: 100%;
         height: 100%;
         background-color: rgb(32, 32, 32);
+    }
+
+    .page-wrapper{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 30px;
     }
 </style>
