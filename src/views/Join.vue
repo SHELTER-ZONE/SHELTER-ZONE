@@ -42,6 +42,9 @@
 </script>
 
 <style scoped lang="scss">
+    * {
+        font-family: DisposableDroid BB, Auraka點陣宋;
+    }
     p {
         text-align: justify;
         color: rgb(191, 191, 191);

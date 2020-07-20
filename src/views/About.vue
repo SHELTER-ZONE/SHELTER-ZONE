@@ -36,8 +36,6 @@
 
 <style scoped lang="scss">
     * {
-        margin: 0;
-        padding: 0;
         font-family: DisposableDroid BB, Auraka點陣宋;
     }
 
