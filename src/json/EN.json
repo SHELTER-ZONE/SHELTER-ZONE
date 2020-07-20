@@ -15,12 +15,12 @@
         "card2":{
             "title":"Origin of the name",
             "content":"No translate...",
-            "img":"/img/porter-madeon-shelter.jpg"
+            "img":"https://i.imgur.com/QC81mth.jpg"
         },
         "card3":{
             "title":"",
             "content":"No translate...",
-            "img":"/img/a1poster.jpg"
+            "img":"https://i.imgur.com/GgF0ktz.jpg"
         },
         "card4":{
             "title":"Core Value",
@@ -88,14 +88,14 @@
     "join":{
         "discord":{
             "name":"Discord",
-            "img":"/img/discord.png",
+            "img":"https://i.imgur.com/v7WcIfF.png",
             "title":"SHELTER ZONE Discord Server",
             "content":"Server Permanent link",
             "link":"https://discord.gg/R75DXHH"
         },
         "github":{
             "name":"Github",
-            "img":"/img/github.png",
+            "img":"https://i.imgur.com/uz6Ga0e.png",
             "title":"SHELTER ZONE Github Organization",
             "content":"",
             "link":"https://github.com/SHELTER-ZONE",

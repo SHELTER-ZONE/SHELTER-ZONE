@@ -15,12 +15,17 @@
         "card2":{
             "title":"命名由來",
             "content":"靈感來自群主很喜歡的 DJ. Porter Robinson 在 2016 與 DJ. Madeon 合作的一首單曲「Shelter」。希望伺服器能接納任何人成為大家的僻護所(Shelter) ，而各主題的群體各自一個 Shelter。所以伺服器這個區域(Zone)就是由多個 Shelter 共同組成的一個 Shelter Zone。",
-            "img":"/img/porter-madeon-shelter.jpg"
+            "img":"https://i.imgur.com/QC81mth.jpg"
         },
         "card3":{
             "title":"",
             "content":"同年與日本 A1 Picture 動畫公司合作的 Shelter 動畫短片，釋出日剛好是群主的生日。",
-            "img":"/img/a1poster.jpg"
+            "img":"https://i.imgur.com/GgF0ktz.jpg"
+        },
+        "card4":{
+            "title":"核心理念",
+            "content":"No translate...",
+            "img":""
         }
     },
     "status":{
@@ -83,14 +88,14 @@
     "join":{
         "discord":{
             "name":"Discord",
-            "img":"/img/discord.png",
+            "img":"https://i.imgur.com/v7WcIfF.png",
             "title":"SHELTER ZONE Discord 伺服器",
             "content":"永久邀請連結",
             "link":"https://discord.gg/R75DXHH"
         },
         "github":{
             "name":"Github",
-            "img":"/img/github.png",
+            "img":"https://i.imgur.com/uz6Ga0e.png",
             "title":"SHELTER ZONE Github 組織",
             "content":"",
             "link":"https://github.com/SHELTER-ZONE",
