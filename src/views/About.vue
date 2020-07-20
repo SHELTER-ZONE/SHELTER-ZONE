@@ -45,6 +45,8 @@ import Footer from '@/components/Footer.vue'
         opacity: 0;
         width: 100%;
         height: 100%;
+        box-sizing: border-box;
+        padding: 30px;
     }
     .bg{
         width: 100%;
@@ -80,7 +82,7 @@ import Footer from '@/components/Footer.vue'
     // ============== //
     //             Desktop             //
     //============== //
-    @media screen and (min-width: 740px) {
+    @media screen and (min-width: 769px) {
         img {
             width: 30%;
         }
@@ -99,8 +101,8 @@ import Footer from '@/components/Footer.vue'
             }
 
             .content {
-                padding-left: 500px;
-                padding-right: 500px;
+                padding-left: 300px;
+                padding-right: 300px;
             }
         }
     }

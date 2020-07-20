@@ -5,7 +5,7 @@
             <div class="bg-wrapper" :class="{fade:fade}"></div>
 
             <div class="title-wrapper">
-                <p :class="{outSZ:fade}">SHELTER ZONE</p>
+                <p class="mtitle" :class="{outSZ:fade}">SHELTER ZONE</p>
                 <ParticleEffectButton id="entry-btn" :visible.sync="btnOps.visible" :animating.sync="btnOps.animating"
                     :options="btnOps" cls="btnentry">
                     Entry!
@@ -13,7 +13,7 @@
             </div>
 
             <div class="footer-wrapper" :class="{fade:fade}">
-                <p>Artworks by Mienar</p>
+                <p>2020 by Proladon#7525 / Artworks by Mienar</p>
             </div>
 
         </div>
@@ -126,8 +126,8 @@
             font-size: 40px;
             animation: inSZ 1.5s;
         }
-
     }
+
 
     @keyframes inSZ{
         from{
@@ -192,6 +192,21 @@
         to{
             opacity: 0;
             transform:translate(0px, -30px)
+        }
+    }
+
+    // ============== //
+    //             Desktop             //
+    //============== //
+    @media screen and (min-width: 1024px){
+        .title-wrapper{
+            .mtitle{
+                font-size: 60px;
+            }
+        }
+        
+        .footer-wrapper{
+            font-size: 15px;
         }
     }
 

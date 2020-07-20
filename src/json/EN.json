@@ -9,15 +9,23 @@
     "about":{
         "card1":{
             "title":"Intro",
-            "content":"英文尚未翻譯，請暫時切換中文"
+            "content":"SHELTER ZONE is a Discord Server, created by Proladon#7525 in 2018/6/27.",
+            "img":""
         },
         "card2":{
             "title":"Origin of the name",
-            "content":"..."
+            "content":"No translate...",
+            "img":"/img/porter-madeon-shelter.jpg"
         },
         "card3":{
             "title":"",
-            "content":"..."
+            "content":"No translate...",
+            "img":"/img/a1poster.jpg"
+        },
+        "card4":{
+            "title":"Core Value",
+            "content":"No translate...",
+            "img":""
         }
     },
     "status":{
@@ -43,29 +51,29 @@
     },
     "docs":{
         "doc1":{
-            "name":"Technological-Exchange-Guide",
+            "name":"📘Technological-Exchange-Guide",
             "url":"https://shelter-zone.github.io/Technological-Exchange-Guide/",
             "intro":"How to - Technological Exchange Guide"
         },
         "doc2":{
-            "name":"SZ_CodeBasic",
+            "name":"📑SZ_CodeBasic",
             "url":"https://github.com/SHELTER-ZONE/SZ_CodeBasic",
             "intro":"程式基礎練習題目"
         },
         "doc3":{
-            "name":"Oragnaization-Structure",
+            "name":"📜Oragnaization-Structure",
             "url":"https://github.com/SHELTER-ZONE/Oragnaization-Structure",
             "intro":"SZ Oragnaization Structure"
         },
         "doc4":{
-            "name":"Discord_Bot_FAQ",
+            "name":"❓Discord_Bot_FAQ",
             "url":"https://github.com/SHELTER-ZONE/Discord_Bot_FAQ",
             "intro":"Discord bot develop FAQ"
         }
     },
     "applications":{
         "app1":{
-            "name":"Entry_CheckZone",
+            "name":"🚧Entry_CheckZone",
             "url":"https://shelter-zone.github.io/Entry_CheckZone/",
             "intro":"SZ Server Entry Check"
         }

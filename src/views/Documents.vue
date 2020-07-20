@@ -149,7 +149,7 @@
             p{
                 color: mediumspringgreen;
                 transform: scale(1.2);
-                transition: ease-in-out .5s;
+                transition: ease-in-out .3s;
             }
         }
     }

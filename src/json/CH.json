@@ -46,29 +46,29 @@
     },
     "docs":{
         "doc1":{
-            "name":"Technological-Exchange-Guide",
+            "name":"📘Technological-Exchange-Guide",
             "url":"https://shelter-zone.github.io/Technological-Exchange-Guide/",
             "intro":"如何進行技術交流指南"
         },
         "doc2":{
-            "name":"SZ_CodeBasic",
+            "name":"📑SZ_CodeBasic",
             "url":"https://github.com/SHELTER-ZONE/SZ_CodeBasic",
             "intro":"程式基礎練習題目"
         },
         "doc3":{
-            "name":"Oragnaization-Structure",
+            "name":"📜Oragnaization-Structure",
             "url":"https://github.com/SHELTER-ZONE/Oragnaization-Structure",
             "intro":"SZ 組織結構"
         },
         "doc4":{
-            "name":"Discord_Bot_FAQ",
+            "name":"❓Discord_Bot_FAQ",
             "url":"https://github.com/SHELTER-ZONE/Discord_Bot_FAQ",
             "intro":"Discord 機器人開發常見問題"
         }
     },
     "applications":{
         "app1":{
-            "name":"Entry_CheckZone",
+            "name":"🚧Entry_CheckZone",
             "url":"https://shelter-zone.github.io/Entry_CheckZone/",
             "intro":"SZ 伺服器邊境檢查"
         }
