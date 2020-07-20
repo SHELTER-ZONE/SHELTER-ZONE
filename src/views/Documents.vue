@@ -83,6 +83,9 @@
 </script>
 
 <style scoped lang="scss">
+* {
+        font-family: DisposableDroid BB;
+    }
     .docs {
         opacity: 0;
         width: 100%;

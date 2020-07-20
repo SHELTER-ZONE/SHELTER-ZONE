@@ -1,12 +1,12 @@
 <template>
     <div class="status">
         <div class="bg"></div>
-        
+
         <div class="block">
             <div class="members">{{data.status.members}}: {{members}}</div>
             <div class="online">{{data.status.online}}: {{online}}</div>
         </div>
-        
+
         <div class="block discus">
             <p class="title">{{data.status.discussion.title}}</p>
             <div class="cate-wrapper">
@@ -22,14 +22,14 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="block role">
             <p class="title">{{data.status.role.title}}</p>
             <div class="cate-wrapper">
-                <div class="cate" >
+                <div class="cate">
                     <p v-for="r in sheet" :key="r.roles">{{r.roles}}</p>
                 </div>
-                <div class="cate-status" >
+                <div class="cate-status">
                     <p v-for="r in sheet" :key="r.color">{{r.nums}}</p>
                 </div>
             </div>
@@ -38,13 +38,13 @@
         <div class="block channel">
             <p class="title">{{data.status.channel.title}}</p>
             <div class="cate-wrapper">
-                <div class="cate" >
+                <div class="cate">
                     <p>{{data.status.channel.text}}</p>
                     <p>{{data.status.channel.voice}}</p>
                 </div>
-                <div class="cate-status" >
-                    <p v-for="r in sheet" :key="r.textchannel">{{r.textchannel}}</p>
-                    <p v-for="r in sheet" :key="r.voicechannel">{{r.voicechannel}}</p>
+                <div class="cate-status">
+                    <p>{{textch}}</p>
+                    <p>{{voicech}}</p>
                 </div>
             </div>
         </div>
@@ -64,7 +64,9 @@
             return {
                 members: String,
                 online: String,
-                sheet:Array,
+                sheet: Array,
+                textch: String,
+                voicech: String,
             }
         },
         mounted() {
@@ -84,8 +86,9 @@
             GSheetReader(options, results => {
                 this.sheet = results
                 this.members = results[0].members
+                this.textch = results[0].textchannel
+                this.voicech = results[0].voicechannel
             });
-          
             // get current online
             axios.get("https://discordapp.com/api/guilds/445157253385814016/widget.json")
                 .then(res => {
@@ -100,16 +103,23 @@
 </script>
 
 <style scoped lang="scss">
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: DisposableDroid BB, Auraka點陣宋;
+    }
+
     .status {
         opacity: 0;
         width: 100%;
         height: 100%;
         position: relative;
     }
+
     // ============== //
     //              Mobile              //
     //============== //
-    .bg{
+    .bg {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -125,51 +135,63 @@
     .block {
         font-size: 1.5rem;
         color: white;
-        background-color:black;
+        background-color: black;
         margin-bottom: 50px;
     }
 
-    .discus, .role, .channel{
+    .discus,
+    .role,
+    .channel {
         width: 80%;
         font-size: 15px;
         margin: 0 auto;
         box-sizing: border-box;
         padding: 10px;
 
-        .cate-wrapper{
+        .cate-wrapper {
             display: flex;
             justify-content: space-between;
         }
 
-        .cate p{
+        .cate p {
             text-align: left;
         }
-        .cate-status p{
-            text-align: right;
+
+        .cate-status {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            p {
+                text-align: right;
+            }
         }
     }
+
     // ============== //
     //             Desktop             //
     //============== //
-@media screen and (min-width: 1024px){
-    .bg{
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        background-image: url("../assets/img/rain.gif");
-        background-position: center;
-        background-size: contain;
-        filter: opacity(50%);
-    }
+    @media screen and (min-width: 1024px) {
+        .bg {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            background-image: url("../assets/img/rain.gif");
+            background-position: center;
+            background-size: contain;
+            filter: opacity(50%);
+        }
 
-    .members, .online{
-        font-size: 50px;
+        .members,
+        .online {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+        }
     }
-    p{
-        font-size: 30px;
-    }
-}
 </style>

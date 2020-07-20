@@ -14,19 +14,19 @@
 </template>
 
 <script>
-import anime from 'animejs'
-import Footer from '@/components/Footer.vue'
+    import anime from 'animejs'
+    import Footer from '@/components/Footer.vue'
     export default {
         name: "About",
-        components:{
+        components: {
             Footer,
         },
         props: {
             data: Object
         },
-        mounted(){
+        mounted() {
             anime({
-                targets:'.about',
+                targets: '.about',
                 opacity: '100%',
                 easing: 'easeInOutQuad',
             })
@@ -35,6 +35,11 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <style scoped lang="scss">
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: DisposableDroid BB, Auraka點陣宋;
+    }
 
     p {
         color: rgb(180, 180, 180);
@@ -48,7 +53,8 @@ import Footer from '@/components/Footer.vue'
         box-sizing: border-box;
         padding: 30px;
     }
-    .bg{
+
+    .bg {
         width: 100%;
         height: 40%;
         background-image: url("../assets/img/foggy.jpeg");
@@ -65,6 +71,7 @@ import Footer from '@/components/Footer.vue'
 
         .title {
             color: white;
+            margin-top: 20px;
         }
 
         .content {
@@ -86,7 +93,8 @@ import Footer from '@/components/Footer.vue'
         img {
             width: 30%;
         }
-        p{
+
+        p {
             font-size: 20px;
         }
 

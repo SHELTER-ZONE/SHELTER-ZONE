@@ -16,18 +16,22 @@
 </script>
 
 <style scoped lang="scss">
-.history{
-    width: 100%;
-    height: 100%;
-}
-    .bg{
+    * {
+        font-family: DisposableDroid BB;
+    }
+    .history {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg {
         width: 100%;
         height: 50%;
-           background-image: url("../assets/img/plant400.gif");
-           background-position: center;
-           background-size: contain;
-           background-repeat: no-repeat;
-       }
+        background-image: url("../assets/img/plant400.gif");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
     p {
         color: white;
@@ -38,13 +42,13 @@
     //             Desktop             //
     //============== //
     @media screen and (min-width: 1024px) {
-       .bg{
-           margin: 0 auto;
-           width: 70%;
-           height: 80%;
-           background-image: url("../assets/img/plant400.gif");
-           background-position: center;
-           background-size: cover;
-       }
+        .bg {
+            margin: 0 auto;
+            width: 70%;
+            height: 80%;
+            background-image: url("../assets/img/plant400.gif");
+            background-position: center;
+            background-size: cover;
+        }
     }
 </style>
