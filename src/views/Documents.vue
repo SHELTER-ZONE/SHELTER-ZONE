@@ -84,7 +84,7 @@
 
 <style scoped lang="scss">
 * {
-        font-family: DisposableDroid BB;
+        font-family: DisposableDroid BB, AurakaPixel;
     }
     .docs {
         opacity: 0;
@@ -136,7 +136,7 @@
     // ============== //
     //             Desktop             //
     //============== //
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
         .docs {
             opacity: 0;
             width: 100%;
