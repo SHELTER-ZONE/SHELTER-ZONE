@@ -106,7 +106,7 @@
     * {
         margin: 0;
         padding: 0;
-        font-family: DisposableDroid BB, Auraka點陣宋;
+        font-family: DisposableDroid BB, AurakaPixel;
     }
 
     .status {

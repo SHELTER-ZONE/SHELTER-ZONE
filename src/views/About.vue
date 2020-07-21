@@ -36,7 +36,7 @@
 
 <style scoped lang="scss">
     * {
-        font-family: DisposableDroid BB, Auraka點陣宋;
+        font-family: DisposableDroid BB, AurakaPixel;
     }
 
     p {

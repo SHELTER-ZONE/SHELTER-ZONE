@@ -43,16 +43,16 @@
 <style lang="scss">
 @font-face {
     font-family: DisposableDroid BB;
-    src: url("~@/assets/font/DisposableDroidBB.ttf");
+    src: url("./common/font/DisposableDroidBB.ttf");
 }
 @font-face {
-    font-family: Aura點陣宋;
-    src: url("~@/assets/font/Aura點陣宋.ttf");
+    font-family: AurakaPixel;
+    src: url("./common/font/AurakaPixel.ttf");
 }
     * {
         margin: 0;
         padding: 0;
-        font-family: DisposableDroid BB, Auraka點陣宋;
+        font-family: DisposableDroid BB, AurakaPixel;
     }
 
     html,
