@@ -1,4 +1,4 @@
-# szone
+# shelter-zone
 
 ## Project setup
 ```
