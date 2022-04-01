@@ -26,6 +26,9 @@
                 lang: "EN",
             }
         },
+        created() {
+            window.location.href = 'https://shelter-zone.github.io/sz-single-entrance/#/';
+        },
         methods: {
             closehome() {
                 this.ishome = false
